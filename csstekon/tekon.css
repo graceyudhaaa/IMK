@@ -89,7 +89,56 @@ hr{
 	background-color:  #F4BC33;
 	margin-top: 5%;
 }
+
 #category .container .row .card{
+	width: 220px;
+	height: 350px;
+	left: 17%;
+}
+
+#category .container .row .card .card_inner{
+	width: 100%;
+	height: 100%;
+	transition: transform 1s;
+	transform-style: preserve-3d;
+	cursor: pointer;
+	position: relative;
+}
+
+#category .container .row .card .card_inner.is_flipped{
+	transform: rotate(180deg);
+
+}
+
+#category .container .row .card .card_inner .card_face{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	overflow: hidden;
+
+}
+
+#category .container .row .card .card_inner .card_face.card_face--front img{
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+
+}
+
+#category .container .row .card .card_inner .card_face.card_face--front{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	display: block;
+}
+
+#category .container .row .card .card_inner .card_face.card_face--back{
+	transform: rotateY(180deg);
+}
+
+/* #category .container .row .card{
 	position: relative;
 	width: 220px;
 	height: 350px;
@@ -146,7 +195,7 @@ hr{
 #category .container .card .contentbx a:hover{
 	background-color: white;
 	color: black;
-}
+} */
 
 /* CONTACT */
 #contact {
