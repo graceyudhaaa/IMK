@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900 & display: swap');
+
+*{
+ font-family: 'Poppins', sans-serif;
+ background-color: black;
+}
+
+body {
+  background-color: black;
+}
+
+/** 2.11 Sidebar **/
+#sidebar.active .sidebar-wrapper {
+  left: 0;
+}
+#sidebar:not(.active) ~ #main {
+  margin-left: 0;
+}
+
+.sidebar-wrapper {
+  width: 260px;
+  height: 80vh;
+  position: fixed;
+  top: 9%;
+  z-index: 10;
+  background-color: black;
+  bottom: 0;
+  border-right: 2px solid #F4BC33;
+  left: -260px;
+  transition: left 0.6s ease-out;
+}
+.sidebar-wrapper .sidebar-header {
+  padding: 2rem 2rem 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.sidebar-wrapper .sidebar-header img {
+  height: 100px;
+  width: auto;
+  margin-top: -2rem;
+}
+.sidebar-wrapper .menu {
+  padding-left: 0;
+  margin-top: 2.1rem;
+
+}
+.sidebar-wrapper .menu .sidebar-link {
+  display: block;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s;
+  color: white;
+}
+.sidebar-wrapper .menu .sidebar-link:hover span {
+  color: #F4BC33;
+  opacity: 1;
+  list-style: none;
+  text-decoration: none;
+}
+.sidebar-wrapper .menu .sidebar-link > span {
+  color: white;
+  font-weight: 500;
+  margin-left: 1rem;
+  opacity: 0.9;
+}
+.sidebar-wrapper .menu .sidebar-item {
+  list-style: none;
+  margin-top: 0.5rem;
+  position: relative;
+}
+.sidebar-wrapper .menu .sidebar-item a:hover{
+  text-decoration: none;
+}
+.sidebar-wrapper .menu .sidebar-item.has-sub .sidebar-link:after {
+  content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9" style="fill:none;stroke:gray;stroke-width:1"></polyline></svg>');
+  position: absolute;
+  color: #ccc;
+  right: 15px;
+  top: 12px;
+  display: block;
+}
+.sidebar-wrapper .menu .sidebar-item.active .sidebar-link {
+  background-color: transparent;
+  text-decoration: none;
+}
+.sidebar-wrapper .menu .sidebar-item.active .sidebar-link:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  background-color: #F4BC33;
+  width: 5px;
+}
+.sidebar-wrapper .menu .submenu {
+  list-style: none;
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+  overflow: hidden;
+  text-decoration: none;
+}
+.sidebar-wrapper .menu .submenu.active {
+  max-height: 500px;
+}
+.sidebar-wrapper .menu .submenu li a {
+  padding: 0.7rem 3rem;
+  display: block;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: all 0.2s;
+}
+.sidebar-wrapper .menu .submenu li a:hover {
+  margin-left: 0.3rem;
+  text-decoration: none;
+  color:  #F4BC33;
+}
+
+@media screen and (max-width: 767px) {
+}
+@media screen and (max-width: 576px){
+
+}
+
+
+/* NAVBAR */
+
+.navbar{
+  background-color: black;
+  height: 90px;
+}
+
+.navbar ul{
+  margin-left: auto;
+   margin-top: 4%;
+  font-size: 23px;
+}
+.navbar ul .icon a{
+  margin-right: 10px;
+}
+.navbar ul .user img{
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  margin-top: 7px;
+}
+.navbar ul .user span{
+  color: white;
+  font-size: 17px;
+}
+
+h3{
+  margin-left: 22%;
+  margin-top: 20px;
+  color: white;
+}
+h4{
+  margin-left: 22%;
+  margin-top: 21px;
+  color: white;
+  font-size: 15px;
+}
+
+/* CONTENT */
+
+#merindink{
+  background-color: black;
+  width: 1000px;
+  height: 1400px;
+  margin-left: 260px;
+  color: white;
+  overflow: hidden;
+}
+#merindink .content .pengertian{
+  width: 970px;
+  height: 400px;
+  float: left;
+  padding: 40px;
+}
+#merindink .content .pengertian img{
+  width: 400px;
+  height: auto;
+  float: left;
+  margin-top: 7px;
+  padding-right: 20px;
+  padding-bottom: 4px;
+}

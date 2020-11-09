@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900 & display: swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: bebas neue;
+	background: black;
+}
+
+/* NAVBAR */
+
+.navbar{
+	background-color: black;
+	height: 70px;
+}
+.navbar-brand img{
+	margin-top: 10px;
+	height: 90px;
+	width: auto;
+	margin-left: 90%;
+}
+.navbar button span{
+	background-color: white;
+}
+.navbar ul{
+	margin-left: 45%;
+}
+.navbar li{
+	padding: 0 25px;
+}
+.navbar ul li a{
+	color: white;
+	font-size: 20px;
+	transition: all ease-in-out 250ms;
+}
+.navbar ul li a:hover{
+	color: #F4BC33;
+}
+.navbar li a::after{
+	content: ' ';
+	position: absolute;
+	display: block;
+	height: 0.2em;
+	width: 0%;
+	background-color: #F4BC33;
+	transition: all ease-in-out 250ms;
+}
+
+.navbar li a:hover::after{
+	width: 4.6%;
+}
+hr{
+	height: 3px;
+	background-color: #F4BC33;
+	top: 0;
+	width: 86%;
+	margin-left: 7.5%;
+}
+
+@media screen and (max-width: 576px){
+	.navbar-toggle{
+		display: flex;
+	}
+}
+
+/* CONTAINER */
+
+.container .row{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.container .row p{
+	font-size: 30px;
+	color: white;
+}
+.container{
+	top: 0;
+}
+
+/* CATEGORY */
+
+#category{
+	position: relative;
+	height: 560px;
+	background-color:  #F4BC33;
+	margin-top: 5%;
+}
+#category .container .row .card{
+	position: relative;
+	width: 220px;
+	height: 350px;
+	background: #ECE3E3;
+	top: 10px;
+	left: 17%;
+	justify-content: space-between;
+}
+#category .container .row .card:hover{
+	background-color: #17171D;
+	transform-style: preserve-3d;
+	transform: scale(1.02);
+	transition: all ease  0.3s;
+}
+#category .container .card .imgbx{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 10000;
+	width: 100%;
+	height: 220px;
+	transition: 0.5s;
+	z-index: 1;
+} 
+#category .container .card .imgbx img {
+	position: absolute;
+	top: 110%;
+	left: 50%;
+	transform: translate(-50%,-110%);
+	height: 270px;
+	width: 180px;
+}
+#category .container .card .contentbx{
+	position: absolute;
+	z-index: 10;
+	bottom: -10%;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	color: black;
+}
+#category .container .card .contentbx:hover{
+	color: white;
+}
+#category .container .card .contentbx a{
+	padding: 10px 15px;
+	background-color: black;
+	border-radius: 8px;
+	margin-top: -5px;
+	color: white;
+	text-decoration: none;
+	font-weight: 400;
+}
+#category .container .card .contentbx a:hover{
+	background-color: white;
+	color: black;
+}
+
+/* CONTACT */
+#contact {
+	display: flex;
+	position: fixed;
+	left: 0;
+	top: 30%;
+	width: 200px;
+	flex-direction: column;
+	z-index: 2;
+}
+
+#contact a{
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 5px;
+	font-size: 17px;
+	margin: 2px;
+	text-align: right;
+	border-radius: 0 50px 50px 0;
+	transform: translate(-140px, 0px);
+	transition: all 0.8s;
+	letter-spacing: 3px;
+}
+#contact a:hover{
+	transform: translate(0px, 0px);
+	color: white;
+}
+#contact a i{
+	margin-left: 25px;
+	background-color: white;
+	height: 40px;
+	width: 40px;
+	border-radius: 20px;
+	color: black;
+	text-align: center;
+	line-height: 40px;
+	transition: 0.8s;
+}
+#contact a:hover i{
+	transform: rotate(360deg);
+}
+.instagram {
+	background-color: #E77471;
+	color: white;
+}
+.facebook {
+	background-color: #2C80D3;
+	color: white;
+}
+.twitter {
+	background-color: #53C5FF;
+	color: white;
+}
+
+/* FOOTER */
+
+footer{
+	bottom: 0;
+	width: 100%;
+	background-color: #242121;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+}
+footer .main-content{
+	display: flex;
+}
+.main-content .box{
+	flex-basis: 50%;
+	padding: 20px 40px;
+}
+
+.box h2{
+	font-size: 1.125rem;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.box .content{
+	margin: 20px 0 0 0;
+}
+.left .content p{
+	text-align: justify;
+}
+.center {
+	margin-left: 10%;
+}
+.center .content i{
+	height: 40px;
+	width: 40px;
+	background-color: #1a1a1a;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 50%;
+	margin-top: 5px;
+}
+.center .content i:hover{
+	background-color: #F4BC33;
+}
+.right {
+	margin-left: -4%;
+}
+.right .btn button{
+	padding: 3px 90px; 
+	margin-left: -13px;
+	background-color: #F4BC33;
+}
+.right .btn button:hover{
+	color: white;
+}
+.right .content .email input{
+	padding: 2px 6px;
+}
+
+footer hr{
+	width: 10%;
+	margin-left: 0;
+}
