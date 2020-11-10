@@ -90,13 +90,20 @@ hr{
 	margin-top: 5%;
 }
 
-#category .container .row .card{
-	width: 220px;
+#category .container .row .cardd{
+	width: 300px;
 	height: 350px;
-	left: 17%;
+	/* left: 20%; */
+	/* top: 5%; */
+	/* display: flex; */
+	/* justify-content: center; */
+	/* align-content: center; */
+	/* margin:auto ; */
+	/* margin-left:100px; */
+	/* transform: translate(-20%, -5%); */
 }
 
-#category .container .row .card .card_inner{
+#category .container .row .cardd .card_inner{
 	width: 100%;
 	height: 100%;
 	transition: transform 1s;
@@ -105,37 +112,59 @@ hr{
 	position: relative;
 }
 
-#category .container .row .card .card_inner.is_flipped{
+#category .container .row .cardd .card_inner.is_flipped{
 	transform: rotate(180deg);
-
+	
 }
 
-#category .container .row .card .card_inner .card_face{
+#category .container .row .cardd .card_inner .card_face{
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	overflow: hidden;
-
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border-radius: 5%;
 }
 
-#category .container .row .card .card_inner .card_face.card_face--front img{
-	max-width: 100%;
-	max-height: 100%;
+#category .container .row .cardd .card_inner .card_face.card_face--front img{
+	max-width: 90%;
+	max-height: 90%;
+	width: 300px;
+	height: 200px;
 	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	border-radius: 10%/20%;
+	object-fit: cover;
 
 }
 
-#category .container .row .card .card_inner .card_face.card_face--front{
+#category .container .row .cardd .card_inner .card_face.card_face--front{
 	display: flex;
 	align-items: center;
+	background: white;
 	justify-content: center;
 	display: block;
+	transform: perspective(560px) rotateY(0deg);
+	transition: transform .6s linear;
 }
 
-#category .container .row .card .card_inner .card_face.card_face--back{
-	transform: rotateY(180deg);
+#category .container .row .cardd .card_inner .card_face.card_face--back{
+	transform: perspective(560px) rotateY(180deg);
+	background: white;
+	text-align: center;
+	transition: transform .6s linear;
+}
+#category .container .row .cardd .card_inner:hover > .card_face.card_face--front{
+	transform: perspective(560px) rotateY(-180deg);
+}
+#category .container .row .cardd .card_inner:hover > .card_face.card_face--back{
+	transform: perspective(560px) rotateY(0deg);	
 }
 
 /* #category .container .row .card{
