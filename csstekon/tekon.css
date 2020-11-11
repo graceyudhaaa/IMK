@@ -131,17 +131,16 @@ hr{
 }
 
 #category .container .row .cardd .card_inner .card_face.card_face--front img{
-	max-width: 90%;
-	max-height: 90%;
+	max-width: 100%;
+	max-height: 100%;
 	width: 300px;
-	height: 200px;
+	height: 300px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 10px;
-	border-radius: 10%/20%;
+	border-radius: 8%/10%;
 	object-fit: cover;
-
 }
 
 #category .container .row .cardd .card_inner .card_face.card_face--front{
@@ -151,15 +150,16 @@ hr{
 	justify-content: center;
 	display: block;
 	transform: perspective(560px) rotateY(0deg);
-	transition: transform .6s linear;
+	transition: transform .6s linear;	
 }
 
 #category .container .row .cardd .card_inner .card_face.card_face--back{
 	transform: perspective(560px) rotateY(180deg);
 	background: white;
-	text-align: center;
 	transition: transform .6s linear;
+	font-size: 18px;
 }
+
 #category .container .row .cardd .card_inner:hover > .card_face.card_face--front{
 	transform: perspective(560px) rotateY(-180deg);
 }
