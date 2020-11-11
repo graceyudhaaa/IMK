@@ -112,6 +112,11 @@ hr{
 	position: relative;
 }
 
+#category .container .row a{
+	text-decoration: none;
+	color: black;
+}
+
 #category .container .row .cardd .card_inner.is_flipped{
 	transform: rotate(180deg);
 	
