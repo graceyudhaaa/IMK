@@ -169,7 +169,7 @@ h4{
 #merindink{
   background-color: black;
   width: 1000px;
-  height: 2300px;
+  height: 2220px;
   margin-left: 260px;
   color: white;
   overflow: hidden;
@@ -187,4 +187,13 @@ h4{
   margin-top: 7px;
   padding-right: 20px;
   padding-bottom: 4px;
+}
+
+.youtube{
+  margin-left: 22%;
+  margin-bottom: 20px;
+}
+.youtube h5{
+  font-size: 15px;
+  color: white;
 }
