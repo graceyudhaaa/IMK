@@ -20,13 +20,13 @@ body {
 	margin-top: 10px;
 	height: 90px;
 	width: auto;
-	margin-left: 90%;
+	margin-left: 80%;
 }
 .navbar button span{
 	background-color: white;
 }
 .navbar ul{
-	margin-left: 45%;
+	margin-left: 40%;
 }
 .navbar li{
 	padding: 0 25px;
